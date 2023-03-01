@@ -5,7 +5,7 @@ function button() {
 
   return (
     <div className="button">
-      <p></p>
+      <p><button href="https://api.chucknorris.io/jokes/random">Carica un joke random</button></p>
     </div>
   )
 }
