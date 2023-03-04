@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import '../styles/button.css'
+import '../styles/Button.css'
 
-function button() {
+function Button() {
 
   return (
-    <div className="button">
+    <div className="Button">
       <p><button href="https://api.chucknorris.io/jokes/random">Carica un joke random</button></p>
     </div>
   )
 }
 
-export default button
+export default Button

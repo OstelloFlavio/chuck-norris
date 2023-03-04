@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import '../styles/title.css'
+import '../styles/Title.css'
 
-function title() {
+function Title() {
 
   return (
-    <div className="title">
+    <div className="Title">
       <p>Webapp API Chuck Norris</p>
     </div>
   )
 }
 
-export default title
+export default Title
