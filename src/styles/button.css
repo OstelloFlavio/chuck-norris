@@ -1,6 +1,20 @@
-p {
+.Button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
+    color: #1a1a1a;
+    border-color: #ADD8E6;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 0px 2px 2px rgb(173,216,230);
 }
+
+Button:hover {
+    border-color: #ADD8E6;
+  }
+
+  Button:focus,
+  Button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }

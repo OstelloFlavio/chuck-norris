@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './styles/App.css'
 import Title from './components/Title.jsx'
-import Button from './components/button'
+import Button from './components/Button.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Title></Title>
-      <Button></Button>
+      <Button callback={clickHandler}></Button>
     </div>
   )
 }
