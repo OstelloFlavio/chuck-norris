@@ -4,12 +4,23 @@ import Title from './components/Title.jsx'
 import Button from './components/Button.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [joke, setJoke] = useState("")
+
+  let loadJokeCallback = function (){
+    console.log("carica joke");
+    setJoke("testo joke");
+  }
+
+  let copyTextCallback = function (){
+    console.log("copiato")
+  }
 
   return (
     <div className="App">
-      <Title></Title>
-      <Button callback={clickHandler}></Button>
+      {joke}
+      <Title />
+      <Button text='Carica il joke' callback={loadJokeCallback}/>
+      <Button text='Copia il joke' variant={ joke === "" ? "disabled" : undefined}callback={copyTextCallback}/>
     </div>
   )
 }
