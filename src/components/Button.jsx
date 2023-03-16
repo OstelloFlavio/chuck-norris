@@ -2,8 +2,7 @@ import { useState } from 'react'
 import '../styles/Button.css'
 
 function Button({text, variant, callback}) {
-  const [count, setCount] = useState(0)
-  let clickHandler = function(e){
+  let clickHandler = function(){
     if(callback!=undefined && variant!="disabled"){
       callback();
     }
