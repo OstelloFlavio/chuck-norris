@@ -41,7 +41,7 @@ function App()
   return (
     <div className="App">
       <Title />
-      <p><Button text='Carica il joke' callback={Carica}/></p>
+      <div><Button text='Carica il joke' callback={Carica}/></div>
       <Select id='Select' values={Categorie}></Select>
       <Joke id="Joke">{Jokes}</Joke>
       <Button id="Clipboard" text='Copia il joke' callback={Copia}/>
